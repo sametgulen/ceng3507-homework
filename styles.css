@@ -1,0 +1,386 @@
+/* Reset margin, padding, and set box-sizing for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base styling for body */
+body {
+    font-family: sans-serif;
+    background-color: #0b163d;
+    color: #e5ebf3;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Header styling */
+header {
+    background-image: url('header.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Logo styling in header */
+.header-left .logo {
+    font-size: 2.5em;
+    color: #fff200;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.slogan {
+    font-size: 1em;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 0.2em;
+}
+
+.nav-links {
+    margin-top: 1em;
+}
+
+/* Styling for each navigation link */
+.nav-links a {
+    color: #ffffff;
+    margin-left: 1em;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    transition: color 0.5s;
+}
+
+/* Hover effect for navigation links */
+.nav-links a:hover {
+    color: #d62c3a;
+}
+
+/* Main container styling */
+.container {
+    display: flex;
+    padding: 2em;
+    gap: 1.5em;
+}
+
+/* Styling for the left sidebar */
+.left-sidebar {
+    width: 20%;
+    padding: 1em;
+    background-image: url('sidebars.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-right: 1px solid #2a3147;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.left-sidebar h3 {
+    margin-bottom: 1em;
+    color: #ffffff;
+    font-weight: 700;
+    padding: 0.5em;
+    background-color: rgba(35, 42, 52, 0.6);
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Styling for individual coin items */
+.coin-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(30, 38, 46, 0.85);
+    padding: 0.8em;
+    border-radius: 8px;
+    margin-bottom: 1em;
+    color: #4cc9f0;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styling for coins */
+.coin-item img {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5em;
+}
+
+/* Main content styling */
+.main-content {
+    width: 60%;
+    padding: 1em;
+    background-image: url('main.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.main-content h2 {
+    text-align: center;
+    margin-bottom: 1.5em;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+/* Styling for news items */
+.news-item {
+    background-color: rgba(13, 27, 42, 0.85);
+    padding: 1.5em;
+    margin-bottom: 1em;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s;
+}
+
+/* Hover effect for news items */
+.news-item:hover {
+    transform: scale(1.03);
+}
+
+.news-item h3 {
+    font-size: 1.3em;
+    color: #9baacf;
+}
+
+/* Styling for the right sidebar */
+.right-sidebar {
+    width: 20%;
+    padding: 1em;
+    background-image: url('sidebars.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-left: 1px solid #313952;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-info {
+    text-align: center;
+    margin-bottom: 1em;
+    width: 100%;
+    background-color: rgba(36, 42, 51, 0.8);
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.user-info img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+
+.user-info p {
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0.5em 0;
+}
+
+.account-balance {
+    text-align: center;
+    margin-bottom: 1em;
+    width: 100%;
+    background-color: rgba(36, 42, 51, 0.8);
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for account balance icon */
+.account-balance img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+
+.account-balance p {
+    color: #ffffff;
+    font-weight: 600;
+    margin: 0.5em 0;
+}
+
+.previous-transactions {
+    text-align: center;
+    width: 100%;
+}
+
+/* Styling for individual transactions */
+.transaction {
+    margin: 0.5em 0;
+    background-color: rgba(36, 42, 51, 0.8);
+    padding: 0.5em;
+    border-radius: 5px;
+    color: #9faed4;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for buttons */
+button {
+    background-color: #4cc9f0;
+    color: #0b0e17;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #3a9bd9;
+    transform: scale(1.03);
+}
+
+/* Styling for bottom links section */
+.bottom-links {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    background-image: url('main.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-top: 1px solid #2c334a;
+}
+
+/* Styling for individual cards in bottom links */
+.card {
+    background-color: rgba(14, 30, 46, 0.85);
+    padding: 1.5em;
+    border-radius: 10px;
+    text-align: center;
+    width: 130px;
+    color: #e0e6ed;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h4 {
+    color: #ffffff;
+    margin-bottom: 0.5em;
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 1.2em;
+    color: #e63544;
+    font-weight: bold;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1c283d;
+    color: #9baacf;
+    padding: 2em;
+    font-size: 0.9em;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #2b3248;
+}
+
+.footer-links {
+    width: 30%;
+    margin: 1em 0;
+}
+
+.footer-links h4 {
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.footer-links p {
+    color: #a2b1d6;
+    line-height: 1.6;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 0.5em 0;
+}
+
+.footer-links a {
+    color: #dbe1e9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+/* Hover effect for footer links */
+.footer-links a:hover {
+    color: #4cc9f0;
+}
+
+/* Social media icons in the footer */
+.social-icons a {
+    margin: 0 0.5em;
+    display: inline-block;
+}
+
+/* Social media icon styling */
+.social-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Styling for footer bottom section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 1em;
+    color: #9dacd1;
+}
+
+/* Text styling for footer bottom */
+.footer-bottom p {
+    margin-top: 1em;
+    font-size: 0.8em;
+}
+
+/* Responsive styling for screens 768px and below */
+@media (max-width: 768px) {
+    /* Adjust layout for container elements */
+    .container {
+        flex-direction: column;
+    }
+    /* Sidebar and main content take full width */
+    .left-sidebar, .main-content, .right-sidebar {
+        width: 100%;
+        margin: 1em 0;
+    }
+}
