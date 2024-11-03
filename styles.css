@@ -15,7 +15,7 @@ body {
 
 /* Header styling */
 header {
-    background-image: url('header.png');
+    background-image: url('images/header.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -72,7 +72,7 @@ header {
 .left-sidebar {
     width: 20%;
     padding: 1em;
-    background-image: url('sidebars.png');
+    background-image: url('images/sidebars.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -121,7 +121,7 @@ header {
 .main-content {
     width: 60%;
     padding: 1em;
-    background-image: url('main.png');
+    background-image: url('images/main.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -161,7 +161,7 @@ header {
 .right-sidebar {
     width: 20%;
     padding: 1em;
-    background-image: url('sidebars.png');
+    background-image: url('images/sidebars.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -258,7 +258,7 @@ button:hover {
     display: flex;
     justify-content: space-around;
     padding: 2em;
-    background-image: url('main.png');
+    background-image: url('images/main.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
